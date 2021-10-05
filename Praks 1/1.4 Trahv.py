@@ -1,5 +1,3 @@
-import math
-
 print("Sisestage oma nimi: ")
 nimi = input()
 
@@ -9,6 +7,13 @@ a = int(input())
 print("Sisestage tegelik kiirus (km/h): ")
 b = int(input())
 
-trahv = ... # Siia trahv
+if b > a:
+    c = b - a
+    d = c * 3
+else:
+    d = 0
 
-print(nimi + ", kiiruse ületamise eest on teie trahv " + " eurot.")
+if d > 190:
+    d = 190
+
+print(nimi + ", kiiruse ületamise eest on teie trahv " + str(d) + " eurot.")
