@@ -1,19 +1,8 @@
-print("Sisestage oma nimi: ")
-nimi = input()
+nimi = str(input("Sisestage oma nimi: "))
 
-print("Sisestage lubatud kiirus (km/h): ")
-a = int(input())
+a = int(input("Sisestage lubatud kiirus (km/h): "))
+b = int(input("Sisestage tegelik kiirus (km/h): "))
 
-print("Sisestage tegelik kiirus (km/h): ")
-b = int(input())
+c = min(190, ((b - a) * 3))
 
-if b > a:
-    c = b - a
-    d = c * 3
-else:
-    d = 0
-
-if d > 190:
-    d = 190
-
-print(nimi + ", kiiruse ületamise eest on teie trahv " + str(d) + " eurot.")
+print(nimi + ", kiiruse ületamise eest on teie trahv " + str(c) + " eurot.")
