@@ -1,12 +1,12 @@
 ring_arv = int(input("Sisesta ringide arv: "))
 
 a = 1
-b = 0
+x = 0
 porgandid = 0
 
-while a < ring_arv:
-    a = a + 5
-    porgandid = porgandid + 5 + b
-    b = b + 5
+while ring_arv > 0:
+    x += 1
+    porgandid += a
+    ring_arv -= 1; a += 1 + x
 
 print("Porgandite kogu arv on " + str(porgandid) + ".")
