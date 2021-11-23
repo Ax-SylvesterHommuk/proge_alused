@@ -18,5 +18,3 @@ for i in laulu_list:
         print("Mängitav muusikapala on " + i)
         
 file.close()
-    
-    
