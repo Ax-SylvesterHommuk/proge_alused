@@ -6,14 +6,11 @@ x2 = 0
 tulemus = 0
 
 title = "Kalkulaator"
-tekst_1 = "Sisestage esimene täisarv lõigus 1-10:"
-tekst_2 = "Sisestage teine täisarv lõigus 1-10:"
-nuppOK = "OK"
 
 nupp_list = ["+", "-", "*"]
 
-x1 = integerbox(tekst_1)
-x2 = integerbox(tekst_2)
+x1 = integerbox("Sisestage esimene täisarv lõigus 1-10:")
+x2 = integerbox("Sisestage teine täisarv lõigus 1-10:")
 
 tehe = buttonbox("Valige tehe:", title, nupp_list)
 if tehe == "+":
